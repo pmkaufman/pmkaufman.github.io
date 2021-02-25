@@ -56,7 +56,7 @@
   }
   </script>
   
-   <p>Which word do you hear?</p>
+   <p><b>Which word do you hear?</b></p>
 
   <button onclick="validate(0)">Seat</button>
   <button onclick="validate(1)">Sit</button>
