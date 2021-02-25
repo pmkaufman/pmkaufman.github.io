@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html> -->
 
 <html lang="en">
 <head>
@@ -13,11 +13,28 @@
 </head>
 
 <body>
-    <h1> foo bar baz </h1>
   
     <audio controls id="music">
      <source src="Sit.mp3" type="audio/mpeg">
     </audio>
+    
+    <p>Which word do you hear?</p>
+
+    <div>
+      <input type="radio" id="seat" name="word" value="seat"
+             checked>
+      <label for="seat">Seat</label>
+    </div>
+
+    <div>
+      <input type="radio" id="sit" name="word" value="sit">
+      <label for="sit">Sit</label>
+    </div>
+
+    <div>
+      <input type="radio" id="set" name="word" value="set">
+      <label for="set">Set</label>
+    </div>
 
   <script>
   var myMusic= document.getElementById("music");
