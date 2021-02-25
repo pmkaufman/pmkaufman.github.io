@@ -18,23 +18,7 @@
       <source src="Sit.mp3" type="audio/mpeg" id='audioFile'>
     </audio>  -->
     
-    <p>Which word do you hear?</p>
-
-    <div>
-      <input type="radio" id="seat" name="word" value="seat"
-             checked>
-      <label for="seat">Seat</label>
-    </div>
-
-    <div>
-      <input type="radio" id="sit" name="word" value="sit">
-      <label for="sit">Sit</label>
-    </div>
-
-    <div>
-      <input type="radio" id="set" name="word" value="set">
-      <label for="set">Set</label>
-    </div>
+   
 
   <script>
  
@@ -75,6 +59,25 @@
   myMusic.pause();
   }
   </script>
+  
+   <p>Which word do you hear?</p>
+
+    <div>
+      <input type="radio" id="seat" name="word" value="seat"
+             checked>
+      <label for="seat">Seat</label>
+    </div>
+
+    <div>
+      <input type="radio" id="sit" name="word" value="sit">
+      <label for="sit">Sit</label>
+    </div>
+
+    <div>
+      <input type="radio" id="set" name="word" value="set">
+      <label for="set">Set</label>
+    </div>
+  
 
 </body>
 </html>
