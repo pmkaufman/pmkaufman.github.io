@@ -33,7 +33,7 @@
 
     <div>
       <input type="radio" id="set" name="word" value="set">
-      <label for="set">Set</label>
+      <label for="set">Sett</label>
     </div>
 
   <script>
