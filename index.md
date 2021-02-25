@@ -23,17 +23,17 @@
     <div>
       <input type="radio" id="seat" name="word" value="seat"
              checked>
-      <label for="seat">Seatt</label>
+      <label for="seat">Seat</label>
     </div>
 
     <div>
       <input type="radio" id="sit" name="word" value="sit">
-      <label for="sit">Sitt</label>
+      <label for="sit">Sit</label>
     </div>
 
     <div>
       <input type="radio" id="set" name="word" value="set">
-      <label for="set">Sett</label>
+      <label for="set">Set</label>
     </div>
 
   <script>
@@ -52,6 +52,7 @@
     
   audio.appendChild(source);
     
+  audio.load();
   
   var myMusic= document.getElementById("music");
   
