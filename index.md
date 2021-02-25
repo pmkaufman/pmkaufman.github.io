@@ -58,7 +58,7 @@
   
    <p>Which word do you hear?</p>
 
-  <button onclick="validate(0)">Setat</button>
+  <button onclick="validate(0)">Seat</button>
   <button onclick="validate(1)">Sit</button>
   <button onclick="validate(2)">Set</button>
     
