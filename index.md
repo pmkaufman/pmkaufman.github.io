@@ -14,9 +14,9 @@
 
 <body>
   
-   <audio controls id="music">
-     <!-- <source src="Sit.mp3" type="audio/mpeg" id='audioFile'> -->
-    </audio> 
+ <!--  <audio controls id="music">
+      <source src="Sit.mp3" type="audio/mpeg" id='audioFile'>
+    </audio>  -->
     
     <p>Which word do you hear?</p>
 
@@ -33,16 +33,24 @@
 
     <div>
       <input type="radio" id="set" name="word" value="set">
-      <label for="set">Set</label>
+      <label for="set">Sett</label>
     </div>
 
   <script>
+
   
   var files = ['Seat.mp3', 'Sit.mp3', 'Sett.mp3'];
   var myAudio = document.getElementById("AudioFile");
   var file = files[Math.random(3)];
   
-  var audio = document.createElement('audio');  
+  
+  
+  document.write("<audio controls id='music'>");
+  document.write("<source src='" + file + "' type='audio/mpeg' id='audioFile'>");
+  document.write("<\/audio>");
+  
+  
+  /*var audio = document.createElement('audio');  
 
     
   var source = document.createElement('source');
@@ -52,7 +60,7 @@
     
   audio.appendChild(source);
     
-  audio.load();
+  audio.load();*/
   
   var myMusic= document.getElementById("music");
   
