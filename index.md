@@ -14,9 +14,9 @@
 
 <body>
   
-    <audio controls id="music">
+   <!-- <audio controls id="music">
      <source src="Sit.mp3" type="audio/mpeg" id='audioFile'>
-    </audio>
+    </audio> -->
     
     <p>Which word do you hear?</p>
 
@@ -40,7 +40,22 @@
   
   var files = ['Seat.mp3', 'Sit.mp3', 'Sett.mp3'];
   var myAudio = document.getElementById("AudioFile");
-  myAudio.src = files[Math.random(3)];
+  var file = files[Math.random(3)];
+  
+  var body = document.getElementsByTagName('body')[0],
+    audio = document.createElement('audio');   //create a div
+    audio.id = 'music';                      //add an id
+    audio.setAttribute("controls");
+    
+    var source = document.createElement('source');
+    source.setAttribute("src", file);
+    source.setAttribute("type", "audio/mpeg");
+    source.setAttribute("id", "audioFile");
+    
+    audio.appendChild(source);
+    
+    body.appendChild(audio);                 //append to the doc.body
+    body.insertBefore(audio,body.firstChild)
   
   var myMusic= document.getElementById("music");
   
