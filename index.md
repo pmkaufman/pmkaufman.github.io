@@ -14,7 +14,6 @@
 
 <body>
     
-   <h1 id="answer"> And you areee... </h1>
 
   <script>
  
@@ -59,24 +58,10 @@
   
    <p>Which word do you hear?</p>
 
-  <button onclick="validate(0)">Seat Button</button>
-  
-    <div>
-      <input type="radio" id="seat" name="word" value="seat"
-             checked>
-      <label for="seat">Seat</label>
-    </div>
-
-    <div>
-      <input type="radio" id="sit" name="word" value="sit">
-      <label for="sit">Sit</label>
-    </div>
-
-    <div>
-      <input type="radio" id="set" name="word" value="set">
-      <label for="set">Set</label>
-    </div>
-  
+  <button onclick="validate(0)">Seat</button>
+  <button onclick="validate(1)">Seat</button>
+  <button onclick="validate(2)">Seat</button>
+    
 
 </body>
 </html>
