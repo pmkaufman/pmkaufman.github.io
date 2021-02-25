@@ -15,7 +15,7 @@
 <body>
   
     <audio controls id="music">
-     <source src="Sit.mp3" type="audio/mpeg">
+     <source src="Sit.mp3" type="audio/mpeg" id='audioFile'>
     </audio>
     
     <p>Which word do you hear?</p>
@@ -37,7 +37,13 @@
     </div>
 
   <script>
+  
+  var files = ['Seat.mp3', 'Sit.mp3', 'Sett.mp3'];
+  var myAudio = document.getElementById("AudioFile");
+  myAudio.src = files[Math.random(3)];
+  
   var myMusic= document.getElementById("music");
+  
   function play() {
   myMusic.play();
   }
