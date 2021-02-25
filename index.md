@@ -14,16 +14,16 @@
 
 <body>
   
-   <!-- <audio controls id="music">
-     <source src="Sit.mp3" type="audio/mpeg" id='audioFile'>
-    </audio> -->
+   <audio controls id="music">
+     <!-- <source src="Sit.mp3" type="audio/mpeg" id='audioFile'> -->
+    </audio> 
     
     <p>Which word do you hear?</p>
 
     <div>
       <input type="radio" id="seat" name="word" value="seat"
              checked>
-      <label for="seat">Seat</label>
+      <label for="seat">Seatt</label>
     </div>
 
     <div>
@@ -42,20 +42,16 @@
   var myAudio = document.getElementById("AudioFile");
   var file = files[Math.random(3)];
   
-  var body = document.getElementsByTagName('body')[0],
-    audio = document.createElement('audio');   //create a div
-    audio.id = 'music';                      //add an id
-    audio.setAttribute("controls");
+  var audio = document.createElement('audio');  
+
     
-    var source = document.createElement('source');
-    source.setAttribute("src", file);
-    source.setAttribute("type", "audio/mpeg");
-    source.setAttribute("id", "audioFile");
+  var source = document.createElement('source');
+  source.setAttribute("src", file);
+  source.setAttribute("type", "audio/mpeg");
+  source.setAttribute("id", "audioFile");
     
-    audio.appendChild(source);
+  audio.appendChild(source);
     
-    body.appendChild(audio);                 //append to the doc.body
-    body.insertBefore(audio,body.firstChild)
   
   var myMusic= document.getElementById("music");
   
