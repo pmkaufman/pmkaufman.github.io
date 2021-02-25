@@ -13,10 +13,6 @@
 </head>
 
 <body>
-  
- <!--  <audio controls id="music">
-      <source src="Sit.mp3" type="audio/mpeg" id='audioFile'>
-    </audio>  -->
     
    <h1 id="answer"> And you are... </h1>
 
@@ -37,19 +33,6 @@
   document.write("<source src='" + file + "' type='audio/mpeg' id='audioFile'>");
   document.write("<\/audio>");
   
-  
-  /*var audio = document.createElement('audio');  
-
-    
-  var source = document.createElement('source');
-  source.setAttribute("src", file);
-  source.setAttribute("type", "audio/mpeg");
-  source.setAttribute("id", "audioFile");
-    
-  audio.appendChild(source);
-    
-  audio.load();*/
-  
   var myMusic= document.getElementById("music");
   
   function play() {
@@ -64,10 +47,12 @@
   
   function validate(n) {
     if (n == rando) {
-      answer.innerHTML = "correct";
+      window.alert ("correct");
+      //answer.innerHTML = "correct";
     }
     else {
-      answer.innerHTML = "incorrect";
+      window.alert ("incorrect");
+      //answer.innerHTML = "incorrect";
     }
   }
   </script>
