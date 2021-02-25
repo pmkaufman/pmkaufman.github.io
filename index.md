@@ -21,7 +21,7 @@
     return Math.floor(Math.random() * Math.floor(max));
   }
   
-  var files = ['Seattt.mp3', 'Sit.mp3', 'Sett.mp3'];
+  var files = ['Seatt.mp3', 'Sit.mp3', 'Sett.mp3'];
   var myAudio = document.getElementById("AudioFile");
   var rando = getRandomInt(3);
   var file = files[rando];
