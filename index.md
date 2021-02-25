@@ -33,15 +33,18 @@
 
     <div>
       <input type="radio" id="set" name="word" value="set">
-      <label for="set">Sett</label>
+      <label for="set">Set</label>
     </div>
 
   <script>
-
+ 
+ function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
   
   var files = ['Seat.mp3', 'Sit.mp3', 'Sett.mp3'];
   var myAudio = document.getElementById("AudioFile");
-  var file = files[Math.random(3)];
+  var file = files[getRandomInt(3)];
   
   
   
