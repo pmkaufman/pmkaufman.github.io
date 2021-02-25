@@ -28,7 +28,7 @@
 
     <div>
       <input type="radio" id="sit" name="word" value="sit">
-      <label for="sit">Sit</label>
+      <label for="sit">Sitt</label>
     </div>
 
     <div>
