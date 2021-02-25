@@ -18,7 +18,7 @@
       <source src="Sit.mp3" type="audio/mpeg" id='audioFile'>
     </audio>  -->
     
-   
+   <h1 id="answer"> And you are... </h1>
 
   <script>
  
@@ -28,7 +28,8 @@
   
   var files = ['Seat.mp3', 'Sit.mp3', 'Sett.mp3'];
   var myAudio = document.getElementById("AudioFile");
-  var file = files[getRandomInt(3)];
+  var rando = getRandomInt(3);
+  var file = files[rando];
   
   
   
@@ -58,10 +59,23 @@
   function pause() {
   myMusic.pause();
   }
+  
+  var answer = docuemnt.getElementById("answer");
+  
+  function validate(n) {
+    if (n == rando) {
+      answer.innerHTML = "correct";
+    }
+    else {
+      answer.innerHTML = "incorrect";
+    }
+  }
   </script>
   
    <p>Which word do you hear?</p>
 
+  <button onclick="validate(0)">Seat Button</button>
+  
     <div>
       <input type="radio" id="seat" name="word" value="seat"
              checked>
