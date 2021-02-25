@@ -13,10 +13,22 @@
 </head>
 
 <body>
-  <h1> foo bar baz </h1>
-  <audio controls>
-  <source src="Sit.mp3" type="audio/mpeg">
-</audio>
-<!--  <script src="js/scripts.js"></script> -->
+    <h1> foo bar baz </h1>
+  
+    <audio controls id="music">
+     <source src="Sit.mp3" type="audio/mpeg">
+    </audio>
+
+  <script>
+  var myMusic= document.getElementById("music");
+  function play() {
+  myMusic.play();
+  }
+
+  function pause() {
+  myMusic.pause();
+  }
+  </script>
+
 </body>
 </html>
