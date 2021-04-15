@@ -21,7 +21,7 @@
     return Math.floor(Math.random() * Math.floor(max));
   }
   
-  var files = ['Seat.mp3', 'Sit.mp3', 'Sett.mp3'];
+  var files = ['Batter.mp3', 'Botter.mp3', 'Butter.mp3'];
   var myAudio = document.getElementById("AudioFile");
   var rando = getRandomInt(3);
   var file = files[rando];
@@ -58,9 +58,9 @@
   
    <p><b>Which word do you hear?</b></p>
 
-  <button onclick="validate(0)">Seat</button>
-  <button onclick="validate(1)">Sit</button>
-  <button onclick="validate(2)">Set</button>
+  <button onclick="validate(0)">Batter</button>
+  <button onclick="validate(1)">Botter</button>
+  <button onclick="validate(2)">Butter</button>
     
 
 </body>
